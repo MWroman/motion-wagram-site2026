@@ -1,0 +1,39 @@
+.section { background: #fff; }
+.sequence { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); list-style: none; padding: 0; margin: 76px 0 0; }
+.step { position: relative; min-width: 0; padding-right: 22px; }
+.symbol { position: relative; width: 80px; height: 80px; background: #fff; z-index: 1; }
+.icon { display: block; width: 80px; height: 80px; }
+.icon path, .icon circle, .connector path { stroke-dasharray: 1; stroke-dashoffset: 0; }
+.connector { position: absolute; overflow: visible; fill: none; stroke: #b5b5b5; stroke-width: 1; }
+.horizontal { top: 39px; left: 80px; width: calc(100% - 80px); height: 2px; }
+.vertical { display: none; }
+.copy { margin-top: 30px; }
+.number { display: block; font-size: 12px; letter-spacing: .08em; font-variant-numeric: tabular-nums; color: #757575; }
+.copy h3 { font-size: clamp(26px, 2.6vw, 38px); font-weight: 400; line-height: 1.15; letter-spacing: -.035em; margin: 14px 0 16px; }
+.copy p { font-size: 16px; line-height: 1.5; color: #626262; margin: 0; text-wrap: pretty; }
+/* Visible by default: without JavaScript the complete diagram remains readable. */
+@media (prefers-reduced-motion: no-preference) {
+  .sequence[data-armed='true'] .icon path,
+  .sequence[data-armed='true'] .icon circle,
+  .sequence[data-armed='true'] .connector path { stroke-dashoffset: 1; }
+  .sequence[data-armed='true'] .copy { opacity: 0; transform: translateY(5px); }
+  .sequence[data-armed='true'] .step[data-visible='true'] .icon path,
+  .sequence[data-armed='true'] .step[data-visible='true'] .icon circle { animation: draw 700ms cubic-bezier(.25,.1,.25,1) var(--step-delay) both; }
+  .sequence[data-armed='true'] .step[data-visible='true'] .connector path { animation: draw 650ms ease calc(var(--step-delay) + 300ms) both; }
+  .sequence[data-armed='true'] .step[data-visible='true'] .copy { animation: reveal 500ms ease calc(var(--step-delay) + 160ms) both; }
+}
+@keyframes draw { to { stroke-dashoffset: 0; } }
+@keyframes reveal { to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 760px) {
+  .sequence { grid-template-columns: minmax(0, 1fr); margin-top: 45px; }
+  .step { display: grid; grid-template-columns: 80px minmax(0, 1fr); column-gap: 22px; padding: 0 0 54px; --step-delay: 0ms !important; }
+  .step:last-child { padding-bottom: 0; }
+  .copy { margin-top: 9px; }
+  .copy h3 { margin: 10px 0 10px; font-size: 28px; }
+  .horizontal { display: none; }
+  .vertical { display: block; top: 80px; left: 39px; width: 2px; height: calc(100% - 80px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sequence .icon path, .sequence .icon circle, .sequence .connector path { stroke-dashoffset: 0; animation: none; }
+  .sequence .copy { opacity: 1; transform: none; animation: none; }
+}

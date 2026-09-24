@@ -4,6 +4,7 @@ import { useEffect, useRef } from 'react';
 import { portfolio } from './content';
 import { projects, selectedProjects } from './projects';
 import Link from 'next/link';
+import Workflow from './components/Workflow';
 
 export default function Home() {
   const video = useRef<HTMLVideoElement>(null);
@@ -54,14 +55,7 @@ export default function Home() {
       <div className="intro-bottom"><span className="small-cross" aria-hidden="true">+</span><p>A considered approach to complex productions. Connecting creative ambition with the people, systems and precision that bring it to life.</p><a className="text-link" href="#approach">The approach <span aria-hidden="true">↓</span></a></div>
     </section>
 
-    <section id="approach" className="workflow section-pad">
-      <div className="section-heading"><span className="eyebrow">01 / WORKFLOW</span><h2>One vision.<br />Every detail.</h2></div>
-      <div className="steps">{[
-        ['01', 'Understand', 'Start with the intent. Define the experience, the constraints and what success looks like.'],
-        ['02', 'Develop', 'Translate the idea into a technical plan. Align systems, schedules and the right people.'],
-        ['03', 'Deliver', 'Bring it together on site. Test, rehearse and run the show with care and precision.'],
-      ].map(([n,title,copy]) => <article className="step" key={n}><span className="step-number">{n}</span><h3>{title}</h3><p>{copy}</p></article>)}</div>
-    </section>
+    <Workflow />
 
     <section id="work" className="work section-pad">
       <div className="work-heading"><div><span className="eyebrow">02 / SELECTED PROJECTS</span><h2>Built for<br />the experience.</h2></div><Link className="text-link" href="/work/">All projects ({projects.length}) <span aria-hidden="true">↗</span></Link></div>

@@ -1,0 +1,1029 @@
+[
+  {
+    "slug": "tikehau-2026",
+    "title": "Tikehau Capital — TKO 2026",
+    "discipline": "2026",
+    "description": "",
+    "mission": "",
+    "credits": [],
+    "images": [
+      {
+        "src": "/media/projects/tikehau-2026/00.webp",
+        "width": 1920,
+        "height": 1280,
+        "credit": "© Laurine Paumard"
+      },
+      {
+        "src": "/media/projects/tikehau-2026/01.webp",
+        "width": 1920,
+        "height": 1080,
+        "credit": "© Laurine Paumard"
+      },
+      {
+        "src": "/media/projects/tikehau-2026/02.webp",
+        "width": 1920,
+        "height": 1280,
+        "credit": "© Laurine Paumard"
+      },
+      {
+        "src": "/media/projects/tikehau-2026/03.webp",
+        "width": 1920,
+        "height": 1280,
+        "credit": "© Laurine Paumard"
+      }
+    ],
+    "videos": [],
+    "sourceRow": null,
+    "featured": true,
+    "cover": "/media/projects/tikehau-2026/00.webp",
+    "alt": "Tikehau Capital — TKO 2026 — project view"
+  },
+  {
+    "slug": "astorg-2025",
+    "title": "Astorg — AGM 2025",
+    "discipline": "2025",
+    "description": "",
+    "mission": "",
+    "credits": [],
+    "images": [
+      {
+        "src": "/media/projects/astorg-2025/00.webp",
+        "width": 1920,
+        "height": 1440,
+        "credit": "© Laurine Paumard"
+      },
+      {
+        "src": "/media/projects/astorg-2025/01.webp",
+        "width": 1920,
+        "height": 1080,
+        "credit": "© Laurine Paumard"
+      },
+      {
+        "src": "/media/projects/astorg-2025/02.webp",
+        "width": 1920,
+        "height": 1280,
+        "credit": "© Laurine Paumard"
+      },
+      {
+        "src": "/media/projects/astorg-2025/03.webp",
+        "width": 1920,
+        "height": 1080,
+        "credit": "© Laurine Paumard"
+      }
+    ],
+    "videos": [],
+    "sourceRow": null,
+    "featured": true,
+    "cover": "/media/projects/astorg-2025/00.webp",
+    "alt": "Astorg — AGM 2025 — project view"
+  },
+  {
+    "slug": "sothebys",
+    "title": "Sotheby’s — Impressionist & Modern Art",
+    "discipline": "Broadcast production",
+    "description": "The Paris Impressionist and Modern Art auction featured works including “Scène de rue à Montmartre” by Vincent van Gogh and “Danseuse au tutu vert” by Edgar Degas.",
+    "mission": "Motion Wagram provided broadcast equipment for video, sound, lights, dolly, IP communications and power including UPS redundancies.",
+    "credits": [
+      {
+        "label": "Client",
+        "value": "SOTHEBY'S"
+      },
+      {
+        "label": "Agency",
+        "value": "THE ASSOCIATED PRESS"
+      },
+      {
+        "label": "Technical Direction",
+        "value": "ROMAN CHANDLER-FRY"
+      },
+      {
+        "label": "Technical Production, Equipment And Crew",
+        "value": "MOTION WAGRAM"
+      }
+    ],
+    "images": [
+      {
+        "src": "/media/projects/sothebys/00.webp",
+        "width": 1920,
+        "height": 1280,
+        "credit": ""
+      },
+      {
+        "src": "/media/projects/sothebys/01.webp",
+        "width": 1920,
+        "height": 1280,
+        "credit": ""
+      }
+    ],
+    "videos": [
+      {
+        "src": "/media/projects/sothebys/film.mp4",
+        "poster": "/media/projects/sothebys/film-poster.webp"
+      }
+    ],
+    "sourceRow": 5,
+    "featured": true,
+    "cover": "/media/projects/sothebys/00.webp",
+    "alt": "Sotheby’s — Impressionist & Modern Art — project view"
+  },
+  {
+    "slug": "interactive-box",
+    "title": "Banque des Territoires — Interactive Box",
+    "discipline": "Mapping & interactivity",
+    "description": "The interactive box was part of an internal event gathering people from Banque des Territoires from all over the country.",
+    "mission": "Motion Wagram developed interactive projection mapping using laser tracking and MadMapper media servers. The experience visualised the impact of Banque des Territoires across different fields.",
+    "credits": [
+      {
+        "label": "Client",
+        "value": "BANQUE DES TERRITOIRES"
+      },
+      {
+        "label": "Equipment, Mapping And Interactivity",
+        "value": "MOTION WAGRAM"
+      },
+      {
+        "label": "Content",
+        "value": "HOLYMAGE"
+      },
+      {
+        "label": "Director",
+        "value": "FREDDY MOUCHARD - BETEL FILMS"
+      }
+    ],
+    "images": [
+      {
+        "src": "/media/projects/interactive-box/00.webp",
+        "width": 1280,
+        "height": 720,
+        "credit": ""
+      }
+    ],
+    "videos": [
+      {
+        "src": "/media/projects/interactive-box/film.mp4",
+        "poster": "/media/projects/interactive-box/film-poster.webp"
+      }
+    ],
+    "sourceRow": 18,
+    "featured": true,
+    "cover": "/media/projects/interactive-box/00.webp",
+    "alt": "Banque des Territoires — Interactive Box — project view"
+  },
+  {
+    "slug": "explore",
+    "title": "Explore",
+    "discipline": "Images & interactivity",
+    "description": "Explore is an interactive and immersive environment to understand immunotherapy, a type of cancer treatment that helps your immune system fight cancer.",
+    "mission": "Motion Wagram designed an interactive and immersive experience where visitors can activate the immunotherapy response of T lymphocytes by approaching their hand.",
+    "credits": [
+      {
+        "label": "Client",
+        "value": "BRISTOL-MYERS SQUIBB"
+      },
+      {
+        "label": "Agency",
+        "value": "MOMA EVENT"
+      },
+      {
+        "label": "Images And Interactivity",
+        "value": "MOTION WAGRAM"
+      },
+      {
+        "label": "Projection",
+        "value": "VLS"
+      }
+    ],
+    "images": [
+      {
+        "src": "/media/projects/explore/00.webp",
+        "width": 1920,
+        "height": 1282,
+        "credit": ""
+      },
+      {
+        "src": "/media/projects/explore/01.webp",
+        "width": 1920,
+        "height": 1282,
+        "credit": ""
+      }
+    ],
+    "videos": [
+      {
+        "src": "/media/projects/explore/film.mp4",
+        "poster": "/media/projects/explore/film-poster.webp"
+      }
+    ],
+    "sourceRow": 2,
+    "featured": true,
+    "cover": "/media/projects/explore/00.webp",
+    "alt": "Explore — project view"
+  },
+  {
+    "slug": "pkfw-2023",
+    "title": "PKFW 2023",
+    "discipline": "2023",
+    "description": "",
+    "mission": "",
+    "credits": [],
+    "images": [
+      {
+        "src": "/media/projects/pkfw-2023/00.webp",
+        "width": 1920,
+        "height": 1080,
+        "credit": ""
+      },
+      {
+        "src": "/media/projects/pkfw-2023/01.webp",
+        "width": 1080,
+        "height": 1440,
+        "credit": ""
+      }
+    ],
+    "videos": [
+      {
+        "src": "/media/projects/pkfw-2023/film.mp4",
+        "poster": "/media/projects/pkfw-2023/film-poster.webp"
+      }
+    ],
+    "sourceRow": null,
+    "featured": true,
+    "cover": "/media/projects/pkfw-2023/00.webp",
+    "alt": "PKFW 2023 — project view"
+  },
+  {
+    "slug": "a-quiet-place",
+    "title": "A Quiet Place",
+    "discipline": "Game design & interactivity",
+    "description": "To experience the atmosphere of A Quiet Place, CGR cinema visitors took part in a challenge with one rule: do not make a sound.",
+    "mission": "Motion Wagram designed an interactive escape game where players have 30 seconds to find the hidden alarm clock without making any noise !",
+    "credits": [
+      {
+        "label": "Client",
+        "value": "CGR CINEMAS"
+      },
+      {
+        "label": "Agency",
+        "value": "WEBEDIA/ ALLOCINE"
+      },
+      {
+        "label": "Game Design And Interactivity",
+        "value": "MOTION WAGRAM"
+      },
+      {
+        "label": "Projection",
+        "value": "LEDBOX COMPANY"
+      }
+    ],
+    "images": [],
+    "videos": [
+      {
+        "src": "/media/projects/a-quiet-place/film.mp4",
+        "poster": "/media/projects/a-quiet-place/film-poster.webp"
+      }
+    ],
+    "sourceRow": 3,
+    "featured": false,
+    "cover": "/media/projects/a-quiet-place/film-poster.webp",
+    "alt": "A Quiet Place — project view"
+  },
+  {
+    "slug": "drawing-lab",
+    "title": "Drawing Lab",
+    "discipline": "Radio processing & images",
+    "description": "An antenna integrated into the building’s façade captures radio signals and translates them into a changing series of original graphical compositions.",
+    "mission": "Using software-defined radio and a gold-plated fractal antenna, Motion Wagram designed a system that captures and processes radio signals from the city, revealing their patterns on screen. The installation is permanently exhibited at the Drawing Hotel in Paris.",
+    "credits": [
+      {
+        "label": "Client",
+        "value": "DRAWING HOTEL"
+      },
+      {
+        "label": "Artist",
+        "value": "STEFANE PERRAUD"
+      },
+      {
+        "label": "Radio Processing And Images",
+        "value": "MOTION WAGRAM"
+      }
+    ],
+    "images": [],
+    "videos": [],
+    "sourceRow": 4,
+    "featured": false,
+    "cover": null,
+    "alt": "Drawing Lab — project view"
+  },
+  {
+    "slug": "escape-room",
+    "title": "Escape Room",
+    "discipline": "Technology & interactivity",
+    "description": "MotionNode interactive server was used to create interaction between RFID sensors, game master inputs, motors, video money counter and lights.",
+    "mission": "Designed the interactivity of a bills printer.",
+    "credits": [
+      {
+        "label": "Client",
+        "value": "CLOSED ESCAPE GAME"
+      },
+      {
+        "label": "Technology And Interactivity",
+        "value": "MOTION WAGRAM"
+      },
+      {
+        "label": "Set Designer",
+        "value": "ATELIER NILS ROUSSET"
+      }
+    ],
+    "images": [],
+    "videos": [],
+    "sourceRow": 6,
+    "featured": false,
+    "cover": null,
+    "alt": "Escape Room — project view"
+  },
+  {
+    "slug": "ipsen-esmo",
+    "title": "IPSEN — ESMO Barcelona 2019",
+    "discipline": "LED animation & interactivity",
+    "description": "The ESMO Congress brings together clinicians, researchers, patient advocates and the pharmaceutical industry to share advances in oncology.",
+    "mission": "Motion Wagram designed a synchronized LED show to explain IPSEN’s commitment to innovation.",
+    "credits": [
+      {
+        "label": "Client",
+        "value": "IPSEN"
+      },
+      {
+        "label": "Agency",
+        "value": "STAND2B"
+      },
+      {
+        "label": "Credits",
+        "value": "LED ANIMATION AND INTERACTIVITY  MOTION WAGRAM"
+      }
+    ],
+    "images": [
+      {
+        "src": "/media/projects/ipsen-esmo/00.webp",
+        "width": 1920,
+        "height": 1080,
+        "credit": ""
+      },
+      {
+        "src": "/media/projects/ipsen-esmo/01.webp",
+        "width": 1920,
+        "height": 1080,
+        "credit": ""
+      }
+    ],
+    "videos": [
+      {
+        "src": "/media/projects/ipsen-esmo/film.mp4",
+        "poster": "/media/projects/ipsen-esmo/film-poster.webp"
+      }
+    ],
+    "sourceRow": 7,
+    "featured": false,
+    "cover": "/media/projects/ipsen-esmo/00.webp",
+    "alt": "IPSEN — ESMO Barcelona 2019 — project view"
+  },
+  {
+    "slug": "challenge",
+    "title": "Challenge",
+    "discipline": "Game design & interactivity",
+    "description": "To fully enjoy the movie, some CGR spectators called on their survival instinct to attempt to win a challenge where the only rule was to be quiet !",
+    "mission": "Motion Wagram designed an interactive escape game where players had 25 seconds to find the hidden alarm clock without making any noise !",
+    "credits": [
+      {
+        "label": "Client",
+        "value": "CGR CINEMAS"
+      },
+      {
+        "label": "Agency",
+        "value": "WEBEDIA / ALLOCINE"
+      },
+      {
+        "label": "Game Design And Interactivity",
+        "value": "MOTION WAGRAM"
+      },
+      {
+        "label": "Lights",
+        "value": "LEDBOX COMPAGNY"
+      }
+    ],
+    "images": [],
+    "videos": [],
+    "sourceRow": 8,
+    "featured": false,
+    "cover": null,
+    "alt": "Challenge — project view"
+  },
+  {
+    "slug": "pullman-hotels",
+    "title": "Pullman Hotels",
+    "discipline": "Custom LED integration",
+    "description": "The “Suspended Moment” programme brought works by three artists to ten Pullman hotels in France, transforming them into temporary galleries for guests and visitors.",
+    "mission": "Motion Wagram developed the software and hardware of custom integrated LED panels.",
+    "credits": [
+      {
+        "label": "Client",
+        "value": "PULLMAN HOTELS - ACCOR"
+      },
+      {
+        "label": "Production Galery",
+        "value": "BARTER"
+      },
+      {
+        "label": "Custom Led Display, Media Players And Integration",
+        "value": "MOTION WAGRAM"
+      }
+    ],
+    "images": [],
+    "videos": [],
+    "sourceRow": 9,
+    "featured": false,
+    "cover": null,
+    "alt": "Pullman Hotels — project view"
+  },
+  {
+    "slug": "conscious-lab",
+    "title": "H&M — Conscious Lab",
+    "discipline": "Interactive applications",
+    "description": "H&M presented its Conscious Lab at its Paris store on Rue La Fayette, showcasing its collections and commitments to more responsible fashion.",
+    "mission": "Motion Wagram designed 5 different apps for visitors to discover H&M's eco-responsible collections and engagements.",
+    "credits": [
+      {
+        "label": "Client",
+        "value": "H&M"
+      },
+      {
+        "label": "Agency",
+        "value": "AUDITOIRE"
+      },
+      {
+        "label": "Apps",
+        "value": "MOTION WAGRAM"
+      },
+      {
+        "label": "Video Equipment",
+        "value": "VIDELIO"
+      }
+    ],
+    "images": [
+      {
+        "src": "/media/projects/conscious-lab/00.webp",
+        "width": 1000,
+        "height": 667,
+        "credit": "Photo: Matthew Oliver"
+      },
+      {
+        "src": "/media/projects/conscious-lab/01.webp",
+        "width": 930,
+        "height": 1240,
+        "credit": ""
+      }
+    ],
+    "videos": [],
+    "sourceRow": 10,
+    "featured": false,
+    "cover": "/media/projects/conscious-lab/00.webp",
+    "alt": "H&M — Conscious Lab — project view"
+  },
+  {
+    "slug": "fifa-poster-reveal",
+    "title": "FIFA — D-100 Poster Reveal",
+    "discipline": "Laser tracking",
+    "description": "Visitors took shots against Ettie, the World Cup mascot. Reaching 100 points revealed the official local posters.",
+    "mission": "Motion Wagram developed a custom laser tracking system integrated with the game, allowing participants to take virtual shots against the mascot.",
+    "credits": [
+      {
+        "label": "Client",
+        "value": "FIFA"
+      },
+      {
+        "label": "Agency",
+        "value": "R&D PROD"
+      },
+      {
+        "label": "Ball Laser Tracking",
+        "value": "MOTION WAGRAM"
+      },
+      {
+        "label": "Images",
+        "value": "BULLIT STUDIO"
+      },
+      {
+        "label": "Game Design",
+        "value": "NACHOS"
+      },
+      {
+        "label": "Video Equipment",
+        "value": "RED DOT BY LENI"
+      }
+    ],
+    "images": [],
+    "videos": [],
+    "sourceRow": 11,
+    "featured": false,
+    "cover": null,
+    "alt": "FIFA — D-100 Poster Reveal — project view"
+  },
+  {
+    "slug": "league-of-legends",
+    "title": "League of Legends — Final Challenge France",
+    "discipline": "Realtime media production",
+    "description": "Webedia produced the League of Legends France Challenge final at its arena in Levallois-Perret.",
+    "mission": "Motion Wagram was in charge of the stage video design : player desk displays and pixel LED strips.",
+    "credits": [
+      {
+        "label": "Client",
+        "value": "RIOT GAMES"
+      },
+      {
+        "label": "Agency",
+        "value": "WEBEDIA"
+      },
+      {
+        "label": "Realtime Media Production",
+        "value": "MOTION WAGRAM"
+      }
+    ],
+    "images": [
+      {
+        "src": "/media/projects/league-of-legends/00.webp",
+        "width": 897,
+        "height": 599,
+        "credit": ""
+      },
+      {
+        "src": "/media/projects/league-of-legends/01.webp",
+        "width": 896,
+        "height": 602,
+        "credit": ""
+      }
+    ],
+    "videos": [],
+    "sourceRow": 12,
+    "featured": false,
+    "cover": "/media/projects/league-of-legends/00.webp",
+    "alt": "League of Legends — Final Challenge France — project view"
+  },
+  {
+    "slug": "grand-quiz-barriere",
+    "title": "Le Grand Quiz Barrière",
+    "discipline": "Live video management",
+    "description": "The show welcomed 1,100 spectators at Casino Barrière in Lille and reached 273,000 viewers on Twitch.",
+    "mission": "Motion Wagram managed the global video workflow of the quiz game system : iPad video capture and video feedback on desks.",
+    "credits": [
+      {
+        "label": "Client",
+        "value": "GROUPE BARRIERE"
+      },
+      {
+        "label": "Agency",
+        "value": "LINCOM - WEBEDIA"
+      },
+      {
+        "label": "Live Video Management",
+        "value": "MOTION WAGRAM"
+      }
+    ],
+    "images": [],
+    "videos": [],
+    "sourceRow": 13,
+    "featured": false,
+    "cover": null,
+    "alt": "Le Grand Quiz Barrière — project view"
+  },
+  {
+    "slug": "webedia-studios",
+    "title": "Webedia — Studio Integration",
+    "discipline": "Technical direction",
+    "description": "Webedia is a global media and technology company, specialized in the recreation and entertainment industries.",
+    "mission": "In 2017, Motion Wagram and Ledbox designed and delivered 7 studios within the Webedia Headquarters in Levallois-Perret.",
+    "credits": [
+      {
+        "label": "Client",
+        "value": "WEBEDIA"
+      },
+      {
+        "label": "Technical Direction",
+        "value": "MOTION WAGRAM"
+      },
+      {
+        "label": "Supplier",
+        "value": "LEDBOX"
+      }
+    ],
+    "images": [],
+    "videos": [],
+    "sourceRow": 14,
+    "featured": false,
+    "cover": null,
+    "alt": "Webedia — Studio Integration — project view"
+  },
+  {
+    "slug": "etalon-lumiere",
+    "title": "Étalon Lumière",
+    "discipline": "Electronics & light design",
+    "description": "The “Étalon Lumière” sculptures use cosmic time as a reference. Each one-metre piece represents, in real time, the time light takes to reach Earth from another body in the Solar System.",
+    "mission": "By using pixel controlled LED strips and custom electronics circuit integration, Motion Wagram designed a series of unique \"Etalons\" for Félicie d'Estienne d'Orves.",
+    "credits": [
+      {
+        "label": "Client",
+        "value": "PALAIS DE LA DECOUVERTE"
+      },
+      {
+        "label": "Artist",
+        "value": "FELICIE D'ESTIENNE D'ORVES"
+      },
+      {
+        "label": "Electronics And Light Design",
+        "value": "MOTION WAGRAM"
+      },
+      {
+        "label": "Metal",
+        "value": "ATELIER DELARASSE"
+      }
+    ],
+    "images": [],
+    "videos": [],
+    "sourceRow": 15,
+    "featured": false,
+    "cover": null,
+    "alt": "Étalon Lumière — project view"
+  },
+  {
+    "slug": "paris-peace-forum",
+    "title": "Paris Peace Forum 2022",
+    "discipline": "Live broadcast direction",
+    "description": "The fifth Paris Peace Forum took place on 11–12 November 2022, bringing together political leaders and representatives of international organisations.",
+    "mission": "Motion Wagram provided its expertise in broadcast live direction and duplex management over two main conference rooms.",
+    "credits": [
+      {
+        "label": "Client",
+        "value": "PARIS PEACE FORUM"
+      },
+      {
+        "label": "Agency",
+        "value": "MCI GROUP"
+      },
+      {
+        "label": "Venue Contractor",
+        "value": "GL EVENTS PALAIS BRONGNIART"
+      },
+      {
+        "label": "Video Live Production And Direction",
+        "value": "MOTION WAGRAM"
+      }
+    ],
+    "images": [],
+    "videos": [
+      {
+        "src": "/media/projects/paris-peace-forum/film.mp4",
+        "poster": "/media/projects/paris-peace-forum/film-poster.webp"
+      }
+    ],
+    "sourceRow": 16,
+    "featured": false,
+    "cover": "/media/projects/paris-peace-forum/film-poster.webp",
+    "alt": "Paris Peace Forum 2022 — project view"
+  },
+  {
+    "slug": "studio-tribeca",
+    "title": "Studio Tribeca",
+    "discipline": "Studio engineering",
+    "description": "Studio Tribeca is a dedicated webcast studio at Auditoire's headquarters in Paris.",
+    "mission": "Motion Wagram designed the studio as a versatile environment for live multiplex productions and webcasts.",
+    "credits": [
+      {
+        "label": "Client",
+        "value": "AUDITOIRE"
+      },
+      {
+        "label": "Engineering",
+        "value": "MOTION WAGRAM & LENI"
+      },
+      {
+        "label": "Production",
+        "value": "MOTION WAGRAM"
+      }
+    ],
+    "images": [
+      {
+        "src": "/media/projects/studio-tribeca/00.webp",
+        "width": 1600,
+        "height": 894,
+        "credit": ""
+      },
+      {
+        "src": "/media/projects/studio-tribeca/01.webp",
+        "width": 1587,
+        "height": 893,
+        "credit": ""
+      }
+    ],
+    "videos": [],
+    "sourceRow": 17,
+    "featured": false,
+    "cover": "/media/projects/studio-tribeca/00.webp",
+    "alt": "Studio Tribeca — project view"
+  },
+  {
+    "slug": "groupm-366",
+    "title": "GroupM × 366 — Présidentielles 2022",
+    "discipline": "Live production & streaming",
+    "description": "GroupM and 366 organised a live webcast on the 2022 French presidential election and the role of advertisers.",
+    "mission": "Motion Wagram was in charge of the full production and live streaming.",
+    "credits": [
+      {
+        "label": "Client",
+        "value": "366 &amp; GROUPM"
+      },
+      {
+        "label": "Equipment And Video Production",
+        "value": "MOTION WAGRAM"
+      }
+    ],
+    "images": [],
+    "videos": [
+      {
+        "src": "/media/projects/groupm-366/film.mp4",
+        "poster": "/media/projects/groupm-366/film-poster.webp"
+      }
+    ],
+    "sourceRow": 19,
+    "featured": false,
+    "cover": "/media/projects/groupm-366/film-poster.webp",
+    "alt": "GroupM × 366 — Présidentielles 2022 — project view"
+  },
+  {
+    "slug": "dcf-2022",
+    "title": "DCF — Assemblée générale 2022",
+    "discipline": "Video production",
+    "description": "The national DCF federation held its 2022 general assembly in its headquarters in Paris, broadcasted live.",
+    "mission": "Motion Wagram produced the event, setting up a studio in the office for the occasion.",
+    "credits": [
+      {
+        "label": "Client",
+        "value": "DCF"
+      },
+      {
+        "label": "Video Production",
+        "value": "MOTION WAGRAM"
+      }
+    ],
+    "images": [],
+    "videos": [],
+    "sourceRow": 20,
+    "featured": false,
+    "cover": null,
+    "alt": "DCF — Assemblée générale 2022 — project view"
+  },
+  {
+    "slug": "jcdecaux-rse",
+    "title": "JCDecaux — Stratégie RSE 2030",
+    "discipline": "Video, sound, light & streaming",
+    "description": "JCDecaux presented its Stratégie RSE 2030 at its industrial site in Plaisir during Sustainable Environment Week.",
+    "mission": "Motion Wagram provided the event’s video, sound, lighting and streaming systems.",
+    "credits": [
+      {
+        "label": "Client",
+        "value": "JCDECAUX"
+      },
+      {
+        "label": "Video, Sound, Light, Streaming",
+        "value": "MOTION WAGRAM"
+      }
+    ],
+    "images": [
+      {
+        "src": "/media/projects/jcdecaux-rse/00.webp",
+        "width": 1920,
+        "height": 999,
+        "credit": ""
+      }
+    ],
+    "videos": [],
+    "sourceRow": 21,
+    "featured": false,
+    "cover": "/media/projects/jcdecaux-rse/00.webp",
+    "alt": "JCDecaux — Stratégie RSE 2030 — project view"
+  },
+  {
+    "slug": "westfield",
+    "title": "Westfield — Good Festival Extra Live",
+    "discipline": "Video production",
+    "description": "Westfield promoted the festival’s brands through a live show hosted by influencer Melococo.",
+    "mission": "Motion Wagram produced the event, setting up different shooting areas for this live video streaming.",
+    "credits": [
+      {
+        "label": "Client",
+        "value": "FIREWORK"
+      },
+      {
+        "label": "Video Production",
+        "value": "MOTION WAGRAM"
+      }
+    ],
+    "images": [
+      {
+        "src": "/media/projects/westfield/00.webp",
+        "width": 1080,
+        "height": 1440,
+        "credit": ""
+      },
+      {
+        "src": "/media/projects/westfield/01.webp",
+        "width": 1080,
+        "height": 1440,
+        "credit": ""
+      }
+    ],
+    "videos": [
+      {
+        "src": "/media/projects/westfield/film.mp4",
+        "poster": "/media/projects/westfield/film-poster.webp"
+      }
+    ],
+    "sourceRow": 22,
+    "featured": false,
+    "cover": "/media/projects/westfield/00.webp",
+    "alt": "Westfield — Good Festival Extra Live — project view"
+  },
+  {
+    "slug": "sewan",
+    "title": "Sewan",
+    "discipline": "",
+    "description": "",
+    "mission": "",
+    "credits": [],
+    "images": [
+      {
+        "src": "/media/projects/sewan/00.webp",
+        "width": 1920,
+        "height": 1280,
+        "credit": ""
+      },
+      {
+        "src": "/media/projects/sewan/01.webp",
+        "width": 1920,
+        "height": 1440,
+        "credit": ""
+      }
+    ],
+    "videos": [
+      {
+        "src": "/media/projects/sewan/film.mp4",
+        "poster": "/media/projects/sewan/film-poster.webp"
+      }
+    ],
+    "sourceRow": null,
+    "featured": false,
+    "cover": "/media/projects/sewan/00.webp",
+    "alt": "Sewan — project view"
+  },
+  {
+    "slug": "ggvie",
+    "title": "GGVIE",
+    "discipline": "",
+    "description": "",
+    "mission": "",
+    "credits": [],
+    "images": [
+      {
+        "src": "/media/projects/ggvie/00.webp",
+        "width": 1080,
+        "height": 1440,
+        "credit": ""
+      },
+      {
+        "src": "/media/projects/ggvie/01.webp",
+        "width": 1920,
+        "height": 1440,
+        "credit": ""
+      }
+    ],
+    "videos": [],
+    "sourceRow": null,
+    "featured": false,
+    "cover": "/media/projects/ggvie/00.webp",
+    "alt": "GGVIE — project view"
+  },
+  {
+    "slug": "sncf-gerland",
+    "title": "SNCF — Gerland",
+    "discipline": "",
+    "description": "",
+    "mission": "",
+    "credits": [],
+    "images": [
+      {
+        "src": "/media/projects/sncf-gerland/00.webp",
+        "width": 1920,
+        "height": 1019,
+        "credit": ""
+      },
+      {
+        "src": "/media/projects/sncf-gerland/01.webp",
+        "width": 1920,
+        "height": 1440,
+        "credit": ""
+      }
+    ],
+    "videos": [
+      {
+        "src": "/media/projects/sncf-gerland/film.mp4",
+        "poster": "/media/projects/sncf-gerland/film-poster.webp"
+      }
+    ],
+    "sourceRow": null,
+    "featured": false,
+    "cover": "/media/projects/sncf-gerland/00.webp",
+    "alt": "SNCF — Gerland — project view"
+  },
+  {
+    "slug": "sncf-numerique",
+    "title": "SNCF — Numérique",
+    "discipline": "",
+    "description": "",
+    "mission": "",
+    "credits": [],
+    "images": [
+      {
+        "src": "/media/projects/sncf-numerique/00.webp",
+        "width": 1179,
+        "height": 885,
+        "credit": ""
+      },
+      {
+        "src": "/media/projects/sncf-numerique/01.webp",
+        "width": 1179,
+        "height": 613,
+        "credit": ""
+      }
+    ],
+    "videos": [],
+    "sourceRow": null,
+    "featured": false,
+    "cover": "/media/projects/sncf-numerique/00.webp",
+    "alt": "SNCF — Numérique — project view"
+  },
+  {
+    "slug": "cop22-aaa",
+    "title": "COP22 — AAA",
+    "discipline": "",
+    "description": "",
+    "mission": "",
+    "credits": [],
+    "images": [
+      {
+        "src": "/media/projects/cop22-aaa/00.webp",
+        "width": 585,
+        "height": 591,
+        "credit": ""
+      },
+      {
+        "src": "/media/projects/cop22-aaa/01.webp",
+        "width": 688,
+        "height": 459,
+        "credit": ""
+      }
+    ],
+    "videos": [],
+    "sourceRow": null,
+    "featured": false,
+    "cover": "/media/projects/cop22-aaa/00.webp",
+    "alt": "COP22 — AAA — project view"
+  },
+  {
+    "slug": "jcdecaux-neuilly",
+    "title": "JCDecaux — ESG Neuilly",
+    "discipline": "",
+    "description": "",
+    "mission": "",
+    "credits": [],
+    "images": [
+      {
+        "src": "/media/projects/jcdecaux-neuilly/00.webp",
+        "width": 1920,
+        "height": 1440,
+        "credit": ""
+      },
+      {
+        "src": "/media/projects/jcdecaux-neuilly/01.webp",
+        "width": 1080,
+        "height": 1440,
+        "credit": ""
+      }
+    ],
+    "videos": [
+      {
+        "src": "/media/projects/jcdecaux-neuilly/film.mp4",
+        "poster": "/media/projects/jcdecaux-neuilly/film-poster.webp"
+      }
+    ],
+    "sourceRow": null,
+    "featured": false,
+    "cover": "/media/projects/jcdecaux-neuilly/00.webp",
+    "alt": "JCDecaux — ESG Neuilly — project view"
+  }
+]

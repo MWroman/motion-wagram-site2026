@@ -1,0 +1,33 @@
+{
+  "projects": 30,
+  "workbookProjects": 21,
+  "folderProjects": 9,
+  "noAssociatedMedia": [
+    "Drawing Lab",
+    "Escape Room",
+    "Challenge",
+    "Pullman Hotels",
+    "FIFA — D-100 Poster Reveal",
+    "Le Grand Quiz Barrière",
+    "Webedia — Studio Integration",
+    "Étalon Lumière",
+    "DCF — Assemblée générale 2022"
+  ],
+  "noWrittenBrief": [
+    "Tikehau Capital — TKO 2026",
+    "Astorg — AGM 2025",
+    "PKFW 2023",
+    "Sewan",
+    "GGVIE",
+    "SNCF — Gerland",
+    "SNCF — Numérique",
+    "COP22 — AAA",
+    "JCDecaux — ESG Neuilly"
+  ],
+  "excluded": [
+    "JCDECAUX_confidentiel_VivaTech2024.mp4"
+  ],
+  "unassignedFolder": [
+    "Photos Freya era (no separate project identity in workbook)"
+  ]
+}

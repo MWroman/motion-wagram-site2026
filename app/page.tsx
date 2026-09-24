@@ -1,39 +1,41 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import { portfolio } from './content';
 import { projects, selectedProjects } from './projects';
 import Link from 'next/link';
 
 export default function Home() {
   const video = useRef<HTMLVideoElement>(null);
-  const [playing, setPlaying] = useState(false);
-  const [videoFailed, setVideoFailed] = useState(false);
 
   useEffect(() => {
     const el = video.current;
     if (!el) return;
     const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
-    const applyPreference = () => { if (reduced.matches) el.pause(); else el.play().catch(() => setPlaying(false)); };
-    applyPreference();
-    reduced.addEventListener('change', applyPreference);
+    let visible = true;
+    const updatePlayback = () => {
+      if (reduced.matches || !visible || document.hidden) el.pause();
+      else el.play().catch(() => { /* Keep the poster if autoplay is unavailable. */ });
+    };
+    reduced.addEventListener('change', updatePlayback);
+    document.addEventListener('visibilitychange', updatePlayback);
     const observer = new IntersectionObserver(([entry]) => {
-      if (!entry.isIntersecting) el.pause();
+      visible = entry.isIntersecting;
+      updatePlayback();
     }, { threshold: 0.05 });
     observer.observe(el);
-    return () => { observer.disconnect(); reduced.removeEventListener('change', applyPreference); };
+    updatePlayback();
+    return () => {
+      observer.disconnect();
+      reduced.removeEventListener('change', updatePlayback);
+      document.removeEventListener('visibilitychange', updatePlayback);
+    };
   }, []);
-
-  const toggleReel = () => {
-    if (!video.current) return;
-    if (video.current.paused) video.current.play().catch(() => setVideoFailed(true));
-    else video.current.pause();
-  };
 
   return <main>
     <a href="#intro" className="skip-link">Skip showreel</a>
     <section className="reel" aria-label="Motion Wagram showreel">
-      <video ref={video} className="reel-video" autoPlay muted loop playsInline preload="metadata" poster={portfolio.poster} onPlay={() => setPlaying(true)} onPause={() => setPlaying(false)} onError={() => setVideoFailed(true)} aria-label="Silent technical production showreel">
+      <video ref={video} className="reel-video" autoPlay muted loop playsInline preload="metadata" poster={portfolio.poster} aria-label="Silent technical production showreel">
         <source src={portfolio.reel} type="video/mp4" />
       </video>
       <div className="reel-shade" />
@@ -41,16 +43,13 @@ export default function Home() {
         <a className="brand" href="#" aria-label="Motion Wagram home"><img className="official-logo" src="/motion-wagram.svg" alt="Motion Wagram" width="651" height="290" /></a>
         <nav className="flex gap-6 md:gap-10" aria-label="Main navigation"><a href="#work">Selected work</a><a href="#about">About</a><a href="#contact">Contact <span aria-hidden="true">↗</span></a></nav>
       </header>
-      <div className="hero-caption"><span>ROMAN CHANDLER FRY</span><span>TECHNICAL PRODUCTION<br />& LIVE EXPERIENCES</span></div>
-      <div className="hero-title" aria-hidden="true">Behind<br /><span>the moment.</span></div>
       <div className="reel-footer flex items-end justify-between gap-6">
         <a className="scroll-link" href="#intro"><span className="down-arrow" aria-hidden="true">↓</span> Explore the work</a>
-        <div className="reel-controls"><span>SHOWREEL 2024 <span className="muted-label">/ SOUND OFF</span></span><button onClick={toggleReel} disabled={videoFailed} aria-label={playing ? 'Pause showreel' : 'Play showreel'}>{videoFailed ? 'Unavailable' : playing ? 'Pause Ⅱ' : 'Play ▷'}</button></div>
       </div>
     </section>
 
     <section id="intro" className="intro section-pad">
-      <div className="section-top"><span className="eyebrow">MOTION WAGRAM</span><span className="eyebrow">INDEPENDENT TECHNICAL PRODUCTION</span></div>
+      <div className="section-top"><span className="eyebrow">TECHNICAL PRODUCTION MANAGEMENT</span><span className="eyebrow">PARIS / EUROPE</span></div>
       <h1>Technical production,<br />from creative intent<br />to live delivery<span className="period">.</span></h1>
       <div className="intro-bottom"><span className="small-cross" aria-hidden="true">+</span><p>A considered approach to complex productions. Connecting creative ambition with the people, systems and precision that bring it to life.</p><a className="text-link" href="#approach">The approach <span aria-hidden="true">↓</span></a></div>
     </section>

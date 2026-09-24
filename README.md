@@ -24,7 +24,7 @@ Le dossier `out/` contient le site prêt à héberger. Les 30 fiches projets son
 - `public/media/showreel-2024.mp4` : Showreel 2024 optimisé, sans piste audio, 1600 pixels de large, environ 3,6 Mo.
 - `public/media/projects/` : photographies WebP et films H.264 optimisés.
 
-Les vidéos des fiches ne se chargent qu’à la demande et disposent de commandes natives. Les images secondaires se chargent progressivement. Le showreel respecte la préférence de réduction des animations et peut être mis en pause.
+Les vidéos des fiches ne se chargent qu’à la demande et disposent de commandes natives. Les images secondaires se chargent progressivement. Le showreel respecte la préférence de réduction des animations et se met en pause hors écran. L’ouverture reste sans titre ni commandes superposés ; le positionnement figure juste en dessous.
 
 ## Sources et état de l’import
 

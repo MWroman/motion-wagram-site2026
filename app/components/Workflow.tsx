@@ -54,7 +54,7 @@ export default function Workflow() {
   }, []);
 
   return <section id="approach" className={`workflow section-pad ${styles.section}`} aria-labelledby="workflow-heading">
-    <div className="section-heading"><span className="eyebrow">01 / WORKFLOW</span><h2 id="workflow-heading">One vision.<br />Every detail.</h2></div>
+    <div className="section-heading"><span className="section-label">01 / WORKFLOW</span><h2 id="workflow-heading">One vision.<br />Every detail.</h2></div>
     <ol ref={list} className={styles.sequence} data-armed={armed} aria-label="Production workflow">
       {steps.map((step, index) => <li key={step.title} className={styles.step} data-index={index} data-visible={visible[index]} style={{ '--step-delay': `${index * 340}ms` } as CSSProperties}>
         <div className={styles.symbol}><WorkflowIcon index={index} /></div>

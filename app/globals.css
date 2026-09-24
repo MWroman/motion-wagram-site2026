@@ -13,3 +13,8 @@
 /* Clean showreel, compact positioning statement below the image. */
 .intro h1{font-size:clamp(36px,4.7vw,72px);line-height:1.08;margin-top:65px;margin-bottom:50px;letter-spacing:-.045em}.intro>.section-top .eyebrow{font-size:12px}.reel-shade{background:rgba(0,0,0,.14)}
 @media(max-width:760px){.intro h1{font-size:clamp(30px,6.3vw,46px);margin-top:45px;margin-bottom:35px}.intro>.section-top{display:block}.intro>.section-top .eyebrow{display:block;text-align:left;max-width:none}.intro>.section-top .eyebrow+span{margin-top:7px}}
+
+/* Primary section markers: distinct from small contextual metadata. */
+.section-label{display:block;width:fit-content;max-width:100%;color:#171717;font-size:clamp(1.125rem,1.6vw,1.5rem);font-weight:600;line-height:1.35;letter-spacing:.025em}
+.section-label::before{content:"";display:block;width:40px;height:2px;background:currentColor;margin-bottom:15px}
+@media(max-width:760px){.section-label{font-size:1.125rem;letter-spacing:.02em}.section-label::before{width:32px;margin-bottom:12px}}

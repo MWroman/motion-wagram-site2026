@@ -1,8 +1,40 @@
-node_modules/
-.next/
-out/
-.sites-runtime/
-*.tsbuildinfo
-.env*
+# Dependencies
+/node_modules/
+/.pnp
+.pnp.*
 
-.next-dev/
+# Next.js and static export
+/.next/
+/.next-dev/
+/out/
+/build/
+*.tsbuildinfo
+
+# Local environment and credentials
+.env*
+!.env.example
+!.env.template
+*.pem
+*.key
+
+# Hosting runtime state
+/.sites-runtime/
+/.vercel/
+
+# Test output
+/coverage/
+/playwright-report/
+/test-results/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo

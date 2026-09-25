@@ -16,7 +16,7 @@ Le dossier `out/` contient le site prêt à héberger. Les 30 fiches projets son
 
 ## Contenu
 
-- `app/content.ts` : identité, showreel et adresse de contact (encore à renseigner).
+- `app/content.ts` : identité, showreel et adresse de contact.
 - `app/projects.json` : les 30 projets. `featured: true` place un projet dans la sélection de l’accueil.
 - `app/work/page.tsx` : index complet des projets.
 - `app/projects/[slug]/page.tsx` : modèle des fiches, images, films et crédits.

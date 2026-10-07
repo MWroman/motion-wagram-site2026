@@ -1,45 +1,15 @@
-'use client';
-
-import { useEffect, useRef } from 'react';
 import { portfolio } from './content';
 import { projects, selectedProjects } from './projects';
 import Link from 'next/link';
 import Workflow from './components/Workflow';
 
 export default function Home() {
-  const video = useRef<HTMLVideoElement>(null);
-
-  useEffect(() => {
-    const el = video.current;
-    if (!el) return;
-    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
-    let visible = true;
-    const updatePlayback = () => {
-      if (reduced.matches || !visible || document.hidden) el.pause();
-      else el.play().catch(() => { /* Keep the poster if autoplay is unavailable. */ });
-    };
-    reduced.addEventListener('change', updatePlayback);
-    document.addEventListener('visibilitychange', updatePlayback);
-    const observer = new IntersectionObserver(([entry]) => {
-      visible = entry.isIntersecting;
-      updatePlayback();
-    }, { threshold: 0.05 });
-    observer.observe(el);
-    updatePlayback();
-    return () => {
-      observer.disconnect();
-      reduced.removeEventListener('change', updatePlayback);
-      document.removeEventListener('visibilitychange', updatePlayback);
-    };
-  }, []);
-
   return <main>
-    <a href="#intro" className="skip-link">Skip showreel</a>
-    <section className="reel" aria-label="Motion Wagram showreel">
-      <video ref={video} className="reel-video" autoPlay muted loop playsInline preload="metadata" poster={portfolio.poster} aria-label="Silent technical production showreel">
-        <source src={portfolio.reel} type="video/mp4" />
-      </video>
-      <div className="reel-shade" />
+    <a href="#intro" className="skip-link">Skip introduction</a>
+    <section className="reel" aria-label="Motion Wagram">
+      <img className="hero-photo" src="/media/astorg-2026-hero.jpg" alt="Scène et installation technique de la conférence Astorg 2026 — photographie de Laurine Paumard" width="2560" height="1706" fetchPriority="high" />
+      <div className="reel-shade" aria-hidden="true" />
+      <h1 className="hero-statement">Technical production,<br />from creative intent<br />to live delivery.</h1>
       <header className="hero-header flex items-start justify-between gap-8">
         <a className="brand" href="#" aria-label="Motion Wagram home"><img className="official-logo" src="/motion-wagram.svg" alt="Motion Wagram" width="651" height="290" /></a>
         <nav className="flex gap-6 md:gap-10" aria-label="Main navigation"><a href="#work">Selected work</a><a href="#about">About</a><a href="#contact">Contact <span aria-hidden="true">↗</span></a></nav>
@@ -51,7 +21,6 @@ export default function Home() {
 
     <section id="intro" className="intro section-pad">
       <div className="section-top"><span className="eyebrow">TECHNICAL PRODUCTION MANAGEMENT</span><span className="eyebrow">PARIS / EUROPE</span></div>
-      <h1>Technical production,<br />from creative intent<br />to live delivery<span className="period">.</span></h1>
       <div className="intro-bottom"><p>A considered approach to complex productions. Connecting creative ambition with the people, systems and precision that bring it to life.</p><a className="text-link" href="#approach">The approach <span aria-hidden="true">↓</span></a></div>
     </section>
 

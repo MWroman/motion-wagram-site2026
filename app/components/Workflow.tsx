@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState, type CSSProperties } from 'react';
 import styles from './Workflow.module.css';
 
-const steps = [
+const englishSteps = [
   { title: 'Understand', explanation: 'Intent, constraints, success.' },
   { title: 'Develop', explanation: 'Technical plan, systems, people.' },
   { title: 'Deliver', explanation: 'On-site execution, rehearsal, show.' },
@@ -28,7 +28,12 @@ function WorkflowIcon({ index }: { index: number }) {
   </svg>;
 }
 
-export default function Workflow() {
+export default function Workflow({locale = 'en'}: {locale?: 'fr' | 'en'}) {
+  const steps = locale === 'fr' ? [
+    {title:'Comprendre', explanation:'Intention, contraintes, objectifs.'},
+    {title:'Concevoir', explanation:'Plan technique, systèmes, équipes.'},
+    {title:'Réaliser', explanation:'Installation, répétitions, exploitation.'},
+  ] : englishSteps;
   const list = useRef<HTMLOListElement>(null);
   const [armed, setArmed] = useState(false);
   const [visible, setVisible] = useState<boolean[]>([false, false, false]);
@@ -54,8 +59,8 @@ export default function Workflow() {
   }, []);
 
   return <section id="approach" className={`workflow section-pad ${styles.section}`} aria-labelledby="workflow-heading">
-    <div className="section-heading"><span className="section-label">01 / WORKFLOW</span><h2 id="workflow-heading">One vision.<br />Every detail.</h2></div>
-    <ol ref={list} className={styles.sequence} data-armed={armed} aria-label="Production workflow">
+    <div className="section-heading"><span className="section-label">{locale === 'fr' ? '01 / MÉTHODE' : '01 / WORKFLOW'}</span><h2 id="workflow-heading">{locale === 'fr' ? <>Une vision.<br />Chaque détail.</> : <>One vision.<br />Every detail.</>}</h2></div>
+    <ol ref={list} className={styles.sequence} data-armed={armed} aria-label={locale === 'fr' ? 'Méthode de production' : 'Production workflow'}>
       {steps.map((step, index) => <li key={step.title} className={styles.step} data-index={index} data-visible={visible[index]} style={{ '--step-delay': `${index * 340}ms` } as CSSProperties}>
         <div className={styles.symbol}><WorkflowIcon index={index} /></div>
         {index < steps.length - 1 && <>

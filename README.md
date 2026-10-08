@@ -39,3 +39,16 @@ Le fichier explicitement nommé `JCDECAUX_confidentiel_VivaTech2024.mp4` n’est
 Conserver au maximum **cinq photos par projet**. La sélection actuelle en contient une à quatre pour les projets illustrés. Le contrôle `node scripts/verify-export.mjs`, après le build, vérifie cette limite, les pages et les liens locaux.
 
 Pour ajouter un projet, compléter `app/projects.json`, placer les médias optimisés dans `public/media/projects/<slug>/`, puis reconstruire le site. Aucun accès au classeur ni au disque de l’ordinateur n’est nécessaire pour les visiteurs.
+
+
+## FR / EN routing (Cloudflare Pages)
+
+- `/fr/` and `/en/` are static, separately rendered routes with matching HTML language, canonical and hreflang tags. Project slugs remain identical across locales.
+- The root `/` is handled by `public/_worker.js`, copied to `out/_worker.js` by `next build`. Cloudflare Pages advanced mode reads `request.cf.country`: FR selects French; every other or unknown country selects English.
+- A manual selection stores the host-only `mw_locale` cookie (one year, SameSite=Lax, Secure over HTTPS) and a localStorage backup. The edge reads only this cookie, never localStorage. The cookie takes priority over country. Clearing browser data removes the preference.
+- Only `/` receives country/preference routing; direct locale paths are served unchanged. Personalized redirects return 302 with private, no-store headers. `_routes.json` restricts Worker execution to the root and legacy redirects.
+- The switcher keeps the equivalent page, query string and anchor. A normal full navigation ensures the correct document language.
+- Local Next development has no geographic edge information: `/` uses the saved preference, otherwise English. Test France/other-country decisions with `node scripts/verify-locales.mjs` after building; verify live geography after deploying to Cloudflare.
+- Build: `pnpm build`; verify: `node scripts/verify-export.mjs` and `node scripts/verify-locales.mjs`. Keep Cloudflare Pages output directory set to `out`. The build deploy must include `_worker.js` and `_routes.json`.
+- Canonicals and sitemap use `https://www.motionwagram.com`. The separate ChatGPT Site is not changed by this checkout.
+- Former unprefixed project and legal URLs redirect to their English counterparts at the edge; the removed standalone French services page redirects to `/fr/#about`.

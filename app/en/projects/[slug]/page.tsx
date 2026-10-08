@@ -1,22 +1,23 @@
+import { alternates } from '../../../i18n';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { getProject, projects } from '../../projects';
-import SiteHeader from '../../components/SiteHeader';
+import { getProject, projects } from '../../../projects';
+import SiteHeader from '../../../components/SiteHeader';
 export const dynamicParams = false;
 export function generateStaticParams() { return projects.map(({slug}) => ({slug})); }
 type Props = { params: Promise<{slug: string}> };
 export async function generateMetadata({params}: Props): Promise<Metadata> {
   const project = getProject((await params).slug);
-  return {title: project ? `${project.title} — Motion Wagram` : 'Project not found', description: project?.mission || project?.description || `${project?.title} — a Motion Wagram project.`};
+  return {alternates: project ? alternates('en', `/projects/${project.slug}/`) : undefined, title: project ? `${project.title} — Motion Wagram` : 'Project not found', description: project?.mission || project?.description || `${project?.title} — a Motion Wagram project.`};
 }
 export default async function ProjectPage({params}: Props) {
   const project = getProject((await params).slug);
   if (!project) notFound();
   const next = projects[(projects.indexOf(project)+1)%projects.length];
-  return <><SiteHeader /><main className="project-detail">
+  return <><SiteHeader locale="en" /><main className="project-detail">
     <section className="detail-heading section-pad">
-      <Link href="/work/" className="text-link">← All projects</Link>
+      <Link href="/en/work/" className="text-link">← All projects</Link>
       <p className="eyebrow">MOTION WAGRAM {project.discipline && ` / ${project.discipline}`}</p>
       <h1>{project.title}</h1>
     </section>
@@ -29,6 +30,6 @@ export default async function ProjectPage({params}: Props) {
       {project.videos.map((film,index)=><figure className="project-film" key={film.src}><video controls playsInline preload="none" poster={film.poster} aria-label={`${project.title} — film ${index+1}`}><source src={film.src} type="video/mp4" /></video></figure>)}
       <div className="detail-gallery">{project.images.slice(1).map((image,index)=><figure key={image.src}><a href={image.src} target="_blank" rel="noreferrer" aria-label={`Open photograph ${index+2} — ${project.title}`}><img src={image.src} alt={`${project.title} — view ${index+2}`} width={image.width} height={image.height} loading="lazy" /></a>{image.credit && <figcaption>{image.credit}</figcaption>}</figure>)}</div>
     </section>}
-    <nav className="project-navigation section-pad" aria-label="Project navigation"><Link href="/work/" className="text-link">← All projects</Link><Link href={`/projects/${next.slug}/`} className="next-project"><span className="eyebrow">NEXT PROJECT ↗</span><span>{next.title}</span></Link></nav>
+    <nav className="project-navigation section-pad" aria-label="Project navigation"><Link href="/en/work/" className="text-link">← All projects</Link><Link href={`/en/projects/${next.slug}/`} className="next-project"><span className="eyebrow">NEXT PROJECT ↗</span><span>{next.title}</span></Link></nav>
   </main></>;
 }

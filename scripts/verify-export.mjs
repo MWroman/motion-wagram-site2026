@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 const projects = JSON.parse(fs.readFileSync('app/projects.json', 'utf8'));
 const output = path.resolve('out');
-const pages = ['index.html', 'work/index.html', ...projects.map(p => `projects/${p.slug}/index.html`)];
+const pages = ['index.html', ...['fr','en'].flatMap(l => [`${l}/index.html`, `${l}/work/index.html`, `${l}/mentions-legales/index.html`, `${l}/confidentialite/index.html`, ...projects.map(p => `${l}/projects/${p.slug}/index.html`)])];
 const failures = [];
 if (projects.length !== new Set(projects.map(p => p.slug)).size) failures.push('Duplicate project slug');
 for (const page of pages) {

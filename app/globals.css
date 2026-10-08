@@ -62,18 +62,14 @@
  .project-open{right:22px;bottom:22px}
 }
 
-/* Gentle section snapping on the homepage; long sections remain freely scrollable. */
-@media (prefers-reduced-motion: no-preference) {
-  html:has(.home-page) { scroll-snap-type: y proximity; scroll-padding-top: 0; }
-  .home-page > section,
-  .home-page > footer { scroll-snap-align: start; scroll-snap-stop: normal; }
-}
+/* Free scrolling; navigation links retain smooth scrolling. */
+html:has(.home-page){scroll-snap-type:none;scroll-padding-top:30px}
 
 /* Clear chapter boundaries, with alternating charcoal surfaces. */
 .home-page > .section-pad{border-top:1px solid #595b5d;padding-top:72px;padding-bottom:88px;margin-top:0}
 .home-page > .intro,.home-page > .work,.home-page > .about{background:#191a1b}
 .home-page > .workflow,.home-page > .capabilities,.home-page > .contact{--paper:#242628;background:var(--paper)}
-.home-page .section-label{font-size:14px;letter-spacing:.1em;font-weight:500;border:1px solid #727577;border-radius:7px;padding:10px 14px;line-height:1.4}
+.home-page .section-label{font-size:14px;letter-spacing:.1em;font-weight:500;border:1px solid #727577;border-radius:7px;padding:10px 14px;line-height:1.4;align-self:start;justify-self:start;flex:0 0 auto;width:fit-content;height:fit-content}
 .home-page .section-label::before{display:none}
 .home-page .about h2{font-size:clamp(42px,5.1vw,78px);line-height:1.06}
 .home-page .about-content{gap:7%}
@@ -90,3 +86,19 @@
 .locale-entry{padding:10vh 6%}.locale-entry a{margin-right:24px;text-decoration:underline}
 .hero-header nav,.inner-header nav{align-items:center}
 @media(max-width:760px){.hero-header nav{gap:12px;flex-wrap:wrap;justify-content:flex-end}.hero-header{gap:14px}.inner-header nav{gap:12px}.hero-header .brand{flex-shrink:0}.hero-header nav .language-switcher a{display:block}.language-switcher a{font-size:12px;padding:7px!important}.contact-last{flex-wrap:wrap}.contact h2{overflow-wrap:break-word}}
+
+/* Consistent identity size and a shared centre line for both footer rows. */
+.inner-header .official-logo,.footer-brand .official-logo{width:124px}
+.footer-bottom{display:grid;grid-template-columns:1fr auto 1fr;align-items:center}
+.footer-bottom>span{text-align:center}
+.footer-bottom>.text-link{justify-self:end}
+.legal-footer{padding-inline:5%}
+body:has(.home-page)>.legal-footer{background:#242628}
+@media(min-width:1600px){.legal-footer{padding-inline:max(5%,calc((100% - 1600px)/2))}}
+@media(max-width:760px){
+ .inner-header .official-logo,.footer-brand .official-logo{width:101px}
+ .footer-bottom{grid-template-columns:1fr;justify-items:center;gap:22px}
+ .footer-bottom .footer-brand{width:auto}
+ .footer-bottom>.text-link{justify-self:center;margin-left:0}
+ .legal-footer{padding-inline:6%;gap:24px}
+}
